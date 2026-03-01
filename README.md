@@ -1,5 +1,9 @@
 # Educational Tools Collection
 
+<!-- BADGES:START -->
+[![website](https://img.shields.io/badge/-website-2196f3?style=flat-square)](https://github.com/topics/website) [![ai](https://img.shields.io/badge/-ai-ff6f00?style=flat-square)](https://github.com/topics/ai) [![desktop-app](https://img.shields.io/badge/-desktop--app-blue?style=flat-square)](https://github.com/topics/desktop-app) [![edtech](https://img.shields.io/badge/-edtech-4caf50?style=flat-square)](https://github.com/topics/edtech) [![education](https://img.shields.io/badge/-education-blue?style=flat-square)](https://github.com/topics/education) [![html](https://img.shields.io/badge/-html-e34f26?style=flat-square)](https://github.com/topics/html) [![javascript](https://img.shields.io/badge/-javascript-f7df1e?style=flat-square)](https://github.com/topics/javascript) [![learning-platform](https://img.shields.io/badge/-learning--platform-blue?style=flat-square)](https://github.com/topics/learning-platform) [![python](https://img.shields.io/badge/-python-3776ab?style=flat-square)](https://github.com/topics/python) [![teaching-tools](https://img.shields.io/badge/-teaching--tools-blue?style=flat-square)](https://github.com/topics/teaching-tools)
+<!-- BADGES:END -->
+
 A comprehensive portal showcasing a diverse collection of educational tools, desktop applications, web platforms, and infrastructure resources designed for teaching, learning, and educational content creation.
 
 ## 🎯 Interactive Tool Discovery
