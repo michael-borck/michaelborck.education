@@ -88,7 +88,6 @@ code {
   color: var(--sl-color-accent);
 }
 
-
 .landing-hero .tagline {
   position: relative;
   font-size: 1.25rem;
@@ -105,27 +104,28 @@ code {
   }
 }
 
-/* ── Hero Cards ── */
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+/* ── Carousel ── */
+.carousel-wrapper {
+  margin: 2rem 0 3rem;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
   gap: 1.5rem;
-  margin: 2rem 0;
+  padding: 0.5rem 0 1rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 
-@media (min-width: 768px) {
-  .hero-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
-@media (min-width: 1024px) {
-  .hero-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.hero-card {
+.carousel-card {
+  flex: 0 0 min(85vw, 420px);
+  scroll-snap-align: center;
   background: var(--sl-color-gray-5);
   border: 1px solid var(--sl-color-gray-4);
   border-radius: 12px;
@@ -133,31 +133,31 @@ code {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.hero-card:hover {
+.carousel-card:hover {
   border-color: var(--sl-color-accent);
   box-shadow: 0 0 20px rgba(6, 182, 212, 0.1);
 }
 
-.hero-card h3 {
+.carousel-card h3 {
   margin-top: 0;
   font-size: 1.25rem;
   color: var(--sl-color-white);
 }
 
-.hero-card p {
+.carousel-card p {
   color: var(--sl-color-gray-1);
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
-.hero-card .tags {
+.carousel-card .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 0.75rem;
 }
 
-.hero-card .tag {
+.carousel-card .tag {
   background: var(--sl-color-accent-low);
   color: var(--sl-color-accent-high);
   font-size: 0.75rem;
@@ -166,22 +166,50 @@ code {
   font-weight: 500;
 }
 
-.hero-card .links {
+.carousel-card .links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 1rem;
 }
 
-.hero-card .links a {
+.carousel-card .links a {
   color: var(--sl-color-accent);
   font-size: 0.85rem;
   font-weight: 500;
   text-decoration: none;
 }
 
-.hero-card .links a:hover {
+.carousel-card .links a:hover {
   text-decoration: underline;
+}
+
+/* ── Carousel Dots ── */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.carousel-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: var(--sl-color-gray-3);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-dots .dot.active {
+  background: var(--sl-color-accent);
+  transform: scale(1.3);
+}
+
+.carousel-dots .dot:hover {
+  background: var(--sl-color-gray-1);
 }
 
 /* ── Tool Grid ── */
@@ -257,6 +285,32 @@ code {
 
 .tool-card .card-footer a:hover {
   text-decoration: underline;
+}
+
+/* ── Download Buttons ── */
+.platform-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.dl-btn {
+  display: inline-block;
+  background: var(--sl-color-accent-low);
+  color: var(--sl-color-accent-high) !important;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  text-decoration: none !important;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.dl-btn:hover {
+  background: rgba(6, 182, 212, 0.15);
+  border-color: var(--sl-color-accent);
 }
 
 /* ── Install snippet ── */
