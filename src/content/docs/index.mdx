@@ -29,7 +29,6 @@ AI-powered course content creation aligned with your teaching philosophy. Genera
   <a href="https://github.com/michael-borck/curriculum-curator">GitHub</a>
   <a href="https://pypi.org/project/curriculum-curator/">PyPI</a>
 </div>
-<div class="platform-downloads" data-repo="michael-borck/curriculum-curator"></div>
 <div class="install-snippet">pip install curriculum-curator</div>
 </div>
 
@@ -47,7 +46,6 @@ AI conversation practice with speech recognition. Students can rehearse intervie
 <div class="links">
   <a href="https://github.com/michael-borck/talk-buddy">GitHub</a>
 </div>
-<div class="platform-downloads" data-repo="michael-borck/talk-buddy"></div>
 </div>
 
 <div class="hero-card">
@@ -65,7 +63,6 @@ Desktop AI tutoring app with local inference via Ollama. Students get a private,
   <a href="https://github.com/michael-borck/study-buddy">GitHub</a>
   <a href="https://pypi.org/project/study-buddy/">PyPI</a>
 </div>
-<div class="platform-downloads" data-repo="michael-borck/study-buddy"></div>
 <div class="install-snippet">pip install study-buddy</div>
 </div>
 
@@ -142,8 +139,8 @@ Transcribes and analyzes conversations locally with AI insights.
 <div class="card-footer">
   <span class="badge">Python</span>
   <a href="https://github.com/michael-borck/deep-talk">GitHub</a>
+  <a href="https://pypi.org/project/deep-talk/">PyPI</a>
 </div>
-<div class="platform-downloads" data-repo="michael-borck/deep-talk"></div>
 <div class="install-snippet">pip install deep-talk</div>
 </div>
 
@@ -157,7 +154,6 @@ AI career guidance and resume analysis for students.
   <span class="badge">Python</span>
   <a href="https://github.com/michael-borck/career-compass">GitHub</a>
 </div>
-<div class="platform-downloads" data-repo="michael-borck/career-compass"></div>
 </div>
 
 <div class="tool-card">
@@ -184,7 +180,6 @@ Survey PDF analysis with AI-generated insights and summaries.
   <span class="badge">Python</span>
   <a href="https://github.com/michael-borck/insight-lens">GitHub</a>
 </div>
-<div class="platform-downloads" data-repo="michael-borck/insight-lens"></div>
 </div>
 
 <div class="tool-card">
@@ -197,7 +192,6 @@ AI tools for entrepreneurship education and business planning.
   <span class="badge">Python</span>
   <a href="https://github.com/michael-borck/venture-lab">GitHub</a>
 </div>
-<div class="platform-downloads" data-repo="michael-borck/venture-lab"></div>
 </div>
 
 <div class="tool-card">
@@ -211,7 +205,6 @@ AI grading CLI — batch-grade assignments with consistent rubric application.
   <a href="https://github.com/michael-borck/mark-mate">GitHub</a>
   <a href="https://pypi.org/project/mark-mate/">PyPI</a>
 </div>
-<div class="platform-downloads" data-repo="michael-borck/mark-mate"></div>
 <div class="install-snippet">pip install mark-mate</div>
 </div>
 
@@ -225,7 +218,6 @@ AI-powered citation and reference analysis tool.
   <span class="badge">Python</span>
   <a href="https://github.com/michael-borck/cite-sight">GitHub</a>
 </div>
-<div class="platform-downloads" data-repo="michael-borck/cite-sight"></div>
 </div>
 
 </div>
@@ -238,35 +230,3 @@ AI-powered citation and reference analysis tool.
   </div>
   <p>Built by Michael Borck · Curtin University</p>
 </div>
-
-<script>
-{`
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.platform-downloads').forEach(async (el) => {
-    const repo = el.dataset.repo;
-    if (!repo) return;
-    try {
-      const res = await fetch('https://api.github.com/repos/' + repo + '/releases/latest');
-      if (!res.ok) return;
-      const data = await res.json();
-      const assets = data.assets || [];
-      const win = assets.find(a => /setup.*\\.exe$/i.test(a.name) || /\\.exe$/i.test(a.name) || /\\.msi$/i.test(a.name));
-      const mac = assets.find(a => /arm64.*\\.dmg$/i.test(a.name) || /\\.dmg$/i.test(a.name));
-      const linux = assets.find(a => /\\.AppImage$/i.test(a.name) || /\\.deb$/i.test(a.name));
-      if (!win && !mac && !linux) {
-        const generic = assets.find(a => /\\.(zip|tar\\.gz)$/i.test(a.name));
-        if (generic) {
-          el.innerHTML = '<a href="' + data.html_url + '" class="platform-btn">Download ' + data.tag_name + '</a>';
-        }
-        return;
-      }
-      let html = '';
-      if (win) html += '<a href="' + win.browser_download_url + '" class="platform-btn" title="' + win.name + '">Windows</a>';
-      if (mac) html += '<a href="' + mac.browser_download_url + '" class="platform-btn" title="' + mac.name + '">macOS</a>';
-      if (linux) html += '<a href="' + linux.browser_download_url + '" class="platform-btn" title="' + linux.name + '">Linux</a>';
-      el.innerHTML = html;
-    } catch (e) {}
-  });
-});
-`}
-</script>
