@@ -41,15 +41,13 @@ code {
   background: #3a3a40;
 }
 
-/* ── Landing Hero Title ── */
-.landing-hero {
+/* ── Starlight Hero ── */
+[data-has-hero] .hero {
   position: relative;
-  text-align: center;
-  padding: 4rem 1rem 2rem;
   overflow: hidden;
 }
 
-.landing-hero::before {
+[data-has-hero] .hero::before {
   content: '';
   position: absolute;
   top: 10%;
@@ -61,6 +59,7 @@ code {
   border-radius: 50%;
   pointer-events: none;
   animation: pulse 6s ease-in-out infinite;
+  z-index: 0;
 }
 
 @keyframes pulse {
@@ -68,40 +67,32 @@ code {
   50% { opacity: 1; transform: translateX(-50%) scale(1.1); }
 }
 
-.landing-hero h1 {
+[data-has-hero] .hero h1,
+[data-has-hero] .hero .tagline,
+[data-has-hero] .hero .sl-flex {
   position: relative;
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin: 0 0 0.75rem;
-  letter-spacing: -0.02em;
+  z-index: 1;
 }
 
-.landing-hero h1 .first-name {
+/* Hero title colours */
+.hero-borck {
   color: var(--sl-color-white);
 }
 
-.landing-hero h1 .dot {
+.hero-dot {
   color: var(--sl-color-gray-2);
 }
 
-.landing-hero h1 .last-name {
+.hero-edu {
   color: var(--sl-color-accent);
 }
 
-.landing-hero .tagline {
-  position: relative;
-  font-size: 1.25rem;
-  color: var(--sl-color-gray-1);
-  margin: 0;
-}
-
-@media (max-width: 640px) {
-  .landing-hero h1 {
-    font-size: 2.25rem;
-  }
-  .landing-hero .tagline {
-    font-size: 1rem;
-  }
+/* Hero badge/pill button */
+.hero-badge {
+  border-radius: 9999px !important;
+  font-size: 0.85rem !important;
+  font-style: italic;
+  letter-spacing: 0.02em;
 }
 
 /* ── Carousel ── */
@@ -351,9 +342,4 @@ code {
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 1rem;
-}
-
-/* ── Hide Starlight's default hero since we use a custom one ── */
-.hero {
-  display: none !important;
 }
