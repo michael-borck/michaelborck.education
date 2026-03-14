@@ -44,7 +44,11 @@ code {
 /* ── Starlight Hero ── */
 [data-has-hero] .hero {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 [data-has-hero] .hero::before {
