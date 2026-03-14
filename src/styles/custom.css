@@ -76,25 +76,6 @@ code {
   letter-spacing: -0.02em;
 }
 
-.hero-logo {
-  display: inline-block;
-  width: 3.2rem;
-  height: 3.2rem;
-  vertical-align: -0.3rem;
-  margin-right: 0.5rem;
-  border-radius: 8px;
-}
-
-@media (max-width: 640px) {
-  .hero-logo {
-    width: 2.2rem;
-    height: 2.2rem;
-    vertical-align: -0.25rem;
-    margin-right: 0.35rem;
-    border-radius: 6px;
-  }
-}
-
 .landing-hero h1 .first-name {
   color: var(--sl-color-white);
 }
@@ -370,6 +351,22 @@ code {
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 1rem;
+}
+
+/* ── Nav bar title colouring ── */
+.site-title span {
+  background: linear-gradient(
+    90deg,
+    var(--sl-color-white) 0%,
+    var(--sl-color-white) 38%,
+    var(--sl-color-gray-2) 38%,
+    var(--sl-color-gray-2) 42%,
+    var(--sl-color-accent) 42%,
+    var(--sl-color-accent) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ── Hide Starlight's default hero since we use a custom one ── */
