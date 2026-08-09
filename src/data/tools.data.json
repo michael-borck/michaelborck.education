@@ -16,7 +16,7 @@
       "linux": true
     },
     "brand": "talk-buddy",
-    "web": "https://talkbuddy.eduserver.au"
+    "web": "https://talkbuddy.borck.education"
   },
   {
     "id": "study-buddy",
@@ -35,7 +35,7 @@
       "linux": true
     },
     "brand": "study-buddy",
-    "web": "https://studybuddy.eduserver.au"
+    "web": "https://studybuddy.borck.education"
   },
   {
     "id": "career-compass",
@@ -53,7 +53,7 @@
       "linux": true
     },
     "brand": "career-compass",
-    "web": "https://careercompass.eduserver.au"
+    "web": "https://careercompass.borck.education"
   },
   {
     "id": "debrief",
@@ -71,7 +71,7 @@
       "linux": true
     },
     "brand": "debrief",
-    "web": "https://debrief.eduserver.au"
+    "web": "https://debrief.borck.education"
   },
   {
     "id": "insight-lens",
@@ -142,7 +142,7 @@
     ],
     "shortDesc": "FeedForward's standalone app — students open the rubric you shared, paste a draft, and practise with private, rubric-aligned AI feedback.",
     "github": "https://github.com/michael-borck/feed-forward-desktop",
-    "web": "https://feedforwarddesktop.eduserver.au"
+    "web": "https://feedforwarddesktop.borck.education"
   },
   {
     "id": "curriculum-curator",
@@ -171,7 +171,7 @@
     ],
     "shortDesc": "Runs a cohort through competing marking approaches — pure-LLM, deterministic signals and hybrid — to see which agrees with your marks.",
     "github": "https://github.com/michael-borck/assessment-bench-desktop",
-    "web": "https://assessmentbench.eduserver.au",
+    "web": "https://assessmentbench.borck.education",
     "pip": "pip install assessment-bench"
   },
   {
@@ -214,7 +214,7 @@
     "github": "https://github.com/michael-borck/slide-stream",
     "pypi": "https://pypi.org/project/slide-stream/",
     "pip": "pip install slide-stream",
-    "web": "https://slidestream.eduserver.au"
+    "web": "https://slidestream.borck.education"
   },
   {
     "id": "venture-lab",
@@ -231,7 +231,7 @@
       "mac": true,
       "linux": true
     },
-    "web": "https://venturelab.eduserver.au"
+    "web": "https://venturelab.borck.education"
   },
   {
     "id": "hands-on-ai",
@@ -246,7 +246,7 @@
     "github": "https://github.com/michael-borck/hands-on-ai",
     "pypi": "https://pypi.org/project/hands-on-ai/",
     "pip": "pip install hands-on-ai",
-    "web": "https://handsonai.eduserver.au"
+    "web": "https://handsonai.borck.education"
   },
   {
     "id": "ask-docs",
@@ -330,7 +330,7 @@
     ],
     "shortDesc": "Batch analyses PDF documents with domain-specific keywords and visualises research findings.",
     "github": "https://github.com/michael-borck/document-lens",
-    "web": "https://documentlens.eduserver.au"
+    "web": "https://documentlens.borck.education"
   },
   {
     "id": "ensayo",
@@ -366,7 +366,7 @@
     ],
     "shortDesc": "Checks student submissions against your rubric — cited evidence per criterion, so you weigh the observations and assign the marks.",
     "github": "https://github.com/michael-borck/assessment-lens-desktop",
-    "web": "https://assessmentlens.eduserver.au",
+    "web": "https://assessmentlens.borck.education",
     "pip": "pip install assessment-lens"
   },
   {
@@ -378,7 +378,7 @@
     ],
     "shortDesc": "AI-assisted lesson planning — upload teaching material, pick a pedagogical framework, generate and refine structured lesson plans.",
     "github": "https://github.com/michael-borck/lesson-loom",
-    "web": "https://lessonloom.eduserver.au"
+    "web": "https://lessonloom.borck.education"
   },
   {
     "id": "ethos-mirror",
@@ -389,7 +389,7 @@
     ],
     "shortDesc": "Teaching reflection and philosophy builder — surface tensions between stated values and practice, build an evidence-grounded philosophy statement.",
     "github": "https://github.com/michael-borck/ethos-mirror",
-    "web": "https://ethosmirror.eduserver.au"
+    "web": "https://ethosmirror.borck.education"
   },
   {
     "id": "book-forge",
@@ -400,7 +400,7 @@
     ],
     "shortDesc": "Generates complete books with AI — multiple providers, exportable to PDF.",
     "github": "https://github.com/michael-borck/book-forge",
-    "web": "https://bookforge.eduserver.au"
+    "web": "https://bookforge.borck.education"
   },
   {
     "id": "headline-hunter",
@@ -413,7 +413,7 @@
     ],
     "shortDesc": "Turns research papers into press releases — AI-assisted headline and key-message drafting from your publications.",
     "github": "https://github.com/michael-borck/headline-hunter",
-    "web": "https://headlinehunter.eduserver.au"
+    "web": "https://headlinehunter.borck.education"
   },
   {
     "id": "fetch-my-weather",
@@ -482,7 +482,7 @@
     "github": "https://github.com/michael-borck/limn",
     "pypi": "https://pypi.org/project/limn/",
     "pip": "pip install limn",
-    "web": "https://limn.eduserver.au"
+    "web": "https://limn.borck.education"
   },
   {
     "id": "llm-fragments-folder",
@@ -602,7 +602,7 @@
     ],
     "shortDesc": "The friendly URL toolkit — shorten links for slides and handouts, expand mystery URLs, generate QR codes with your logo, and check link health.",
     "github": "https://github.com/michael-borck/slinkr",
-    "web": "https://www.slinkr.link"
+    "web": "https://slinkr.link"
   },
   {
     "id": "spec-to-code",
