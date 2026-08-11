@@ -88,7 +88,7 @@
       "linux": true
     },
     "brand": "insight-lens",
-    "web": "https://insightlens.eduserver.au"
+    "web": "https://insightlens.borck.education"
   },
   {
     "id": "class-pulse",
@@ -99,7 +99,7 @@
     ],
     "shortDesc": "Real-time audience engagement with polls, word clouds, and QR code joining.",
     "github": "https://github.com/michael-borck/class-pulse",
-    "web": "https://classpulse.eduserver.au",
+    "web": "https://classpulse.borck.education",
     "features": [
       {
         "title": "Live polls",
@@ -129,7 +129,7 @@
     ],
     "shortDesc": "Centralised feedback web app — you set up the class assessment, students upload their work and receive AI formative feedback.",
     "github": "https://github.com/michael-borck/feed-forward",
-    "web": "https://feedforward.eduserver.au"
+    "web": "https://feedforward.borck.education"
   },
   {
     "id": "feed-forward-desktop",
@@ -155,7 +155,7 @@
     "github": "https://github.com/michael-borck/curriculum-curator",
     "pypi": "https://pypi.org/project/curriculum-curator/",
     "pip": "pip install curriculum-curator",
-    "web": "https://curriculumcurator.eduserver.au",
+    "web": "https://curriculumcurator.borck.education",
     "download": {
       "win": true,
       "mac": true,
@@ -184,7 +184,7 @@
     ],
     "shortDesc": "AI-powered citation and reference analysis for academic writing.",
     "github": "https://github.com/michael-borck/cite-sight",
-    "web": "https://citesight.eduserver.au",
+    "web": "https://citesight.borck.education",
     "download": {
       "win": true,
       "mac": true,
@@ -354,7 +354,7 @@
     ],
     "shortDesc": "Turn a tutorial or worksheet into a standalone interactive-fiction story students play through.",
     "github": "https://github.com/michael-borck/playable-lessons",
-    "web": "https://playablelessons.eduserver.au"
+    "web": "https://playablelessons.borck.education"
   },
   {
     "id": "assessment-lens",

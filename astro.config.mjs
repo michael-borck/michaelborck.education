@@ -10,7 +10,7 @@ export default defineConfig({
     '/study-buddy/': 'https://studybuddy.borck.education',
     '/career-compass/': 'https://careercompass.borck.education',
     '/debrief/': 'https://debrief.borck.education',
-    '/insight-lens/': 'https://insightlens.eduserver.au',
+    '/insight-lens/': 'https://insightlens.borck.education',
     '/document-lens/': 'https://documentlens.borck.education',
     // deep-talk was renamed to debrief (July 2026); send straight to its home.
     '/deep-talk/': 'https://debrief.borck.education',
