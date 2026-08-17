@@ -645,6 +645,18 @@
     "github": "https://github.com/michael-borck/the-ai-skills-passport"
   },
   {
+    "id": "trust-tool",
+    "name": "trust-tool",
+    "type": "Web App",
+    "tags": [
+      "engage",
+      "practice"
+    ],
+    "shortDesc": "Drag-the-scenario 2×2 game for building instinct about where to trust AI output — 16 domain packs including university roles.",
+    "github": "https://github.com/michael-borck/trust-tool",
+    "web": "https://trusttool.borck.education"
+  },
+  {
     "id": "three-experts",
     "name": "three-experts",
     "type": "Desktop App",
